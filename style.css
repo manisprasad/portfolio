@@ -18,6 +18,25 @@
     --font-dark-color-2: #151515;
     --sidebar-dark-color: #191D2B;
 }
+
+.dark-mode {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --background-dark-color: #10121A;
+    --background-dark-grey: #191D2B;
+    --border-color: #2e344e;
+    --background-light-color: #10121A;
+    --background-light-color-2: #191D2B;
+    --white-color: #fff;
+    --font-light-color: #a4acc4;
+    --font-dark-color: #f1f1f1;
+    --font-dark-color-2: #dcdcdc;
+    --sidebar-dark-color: #191D2B;
+}
+
+
+
+
 .center{
     display: flex;
     justify-content: center;
@@ -38,6 +57,29 @@ body{
     font-family: 'Poppins', sans-serif;
     background-color: var(--background-dark-color);
 }
+
+.my-name{
+    position: relative;
+    height: 3.8rem;
+
+}
+
+.my-name i{
+    height: 100%;
+    width: 50px;
+    display: flex;
+    font-size: 1rem;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    color: var(--white-color);
+    position: absolute;
+    right: 1.4rem;
+    cursor: pointer;
+    /* top: 50%; */
+}
+
 .name{
     font-size: 2.5rem;
     font-weight: 600;
@@ -77,6 +119,7 @@ body{
     background-color: var(--sidebar-dark-color); 
     border-right: 2px solid var(--border-color);
     padding-left: 2rem;
+    padding-right: 0.5rem;
     flex: 1;
     transition: all 0.4s ease;
 }
@@ -107,7 +150,7 @@ body{
 
 .contact i {
     margin-right: 8px; 
-    color: white; 
+    color: var(--white-color); 
 }
 .contact a:hover, .contact a:hover i {
     color: var(--primary-color);
@@ -146,7 +189,8 @@ body{
 
 .skills i {
     margin-right: 8px; 
-    color: white; 
+    color: var(--white-color); 
+
     font-size: 1.2rem;
     font-weight: bold;
 }
@@ -185,7 +229,8 @@ body{
 }
 .education i {
     margin-right: 8px; 
-    color: white; 
+    color: var(--white-color); 
+
     font-size: 1.2rem;
     font-weight: bold;
 }
@@ -211,10 +256,10 @@ body{
     margin: 10px 30px;
 }
 .about-section p {
-    background: var(--border-color);
+    background-color: rgba(59, 113, 173, 0.342);
     padding: 1rem;
     border-radius: 4px;
-    color: #d1c4c4;
+    color: var(--white-color);
     font-family: 'Courier New', Courier, monospace;
     font-size: 16px;
     line-height: 1.5;
@@ -223,7 +268,7 @@ body{
   
   .about-section p::before {
     content: "<about>";
-    color: #d1d1e97c;
+    color: #707075be;
     margin-right: 38px;
     font-weight: 800;
 
@@ -231,7 +276,7 @@ body{
   
   .about-section p::after {
     content: "<about/>";
-    color: #d1d1e97c;
+    color:  #707075be;
     font-weight: 800;
     margin-left: 38px;
 
@@ -258,9 +303,9 @@ body{
     display: inline-flex;
     align-items: center;
     text-decoration: none;
-    color: var(--font-light-color);
+   
     margin: 8px 0; 
-    color: var(--background-light-color-2);
+    color: var(--white-color);
     text-decoration: underline;
 }
 .projects-links{
@@ -273,7 +318,8 @@ body{
 
 .projects-section i {
     margin-right: 8px; 
-    color: white; 
+    color: var(--white-color); 
+
 }
 .projects-section a:hover, .projects-section a:hover i {
     color: var(--primary-color);
@@ -309,7 +355,8 @@ body{
 }
 .work-experience i {
     margin-right: 8px; 
-    color: white; 
+    color: var(--white-color); 
+
     font-size: 1.2rem;
     font-weight: bold;
 }
