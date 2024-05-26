@@ -108,6 +108,9 @@ body{
     .main-content{
         flex-direction: column;
     }
+    .my-name i{
+        right: 0.5rem;
+    }
 }
 
 .main-content{
